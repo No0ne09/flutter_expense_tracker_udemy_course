@@ -52,7 +52,7 @@ class QuickMenuState extends State<QuickMenu> {
       showDialog(
         context: context,
         builder: (ctx) => AlertDialog(
-          title: const Text("Invalid data"),
+          title: const Text("Problem with data"),
           actions: [
             TextButton(
               onPressed: () {
