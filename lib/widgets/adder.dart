@@ -228,8 +228,8 @@ class QuickMenuState extends State<QuickMenu> {
                       ),
                       ElevatedButton(
                         onPressed: () {
-                          //Navigator.pop(context);
-                          print(MediaQuery.of(context).viewPadding.bottom);
+                          Navigator.pop(context);
+                          //print(MediaQuery.of(context).viewPadding.bottom);
                         },
                         child: const Text("Cancel"),
                       )
@@ -269,8 +269,8 @@ class QuickMenuState extends State<QuickMenu> {
                       ),
                       ElevatedButton(
                         onPressed: () {
-                          // Navigator.pop(context);
-                          print(MediaQuery.of(context).viewPadding.bottom);
+                          Navigator.pop(context);
+                          //print(MediaQuery.of(context).viewPadding.bottom);
                         },
                         child: const Text("Cancel"),
                       )

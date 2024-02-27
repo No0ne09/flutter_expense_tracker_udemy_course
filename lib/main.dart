@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:flutter/services.dart';
 import 'package:expense_tracker/widgets/expenses.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 var kColorScheme = ColorScheme.fromSeed(
   seedColor: const Color.fromARGB(255, 240, 139, 139),
@@ -12,7 +13,7 @@ var kDarkCholorScheme = ColorScheme.fromSeed(
 );
 
 void main() {
-  // WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   //SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
   //  .then((fn) {
   runApp(
@@ -31,9 +32,9 @@ void main() {
             backgroundColor: kDarkCholorScheme.onInverseSurface,
           ),
         ),
+        textTheme: GoogleFonts.cagliostroTextTheme(ThemeData.dark().textTheme),
       ),
       debugShowCheckedModeBanner: false,
-      
       theme: ThemeData().copyWith(
         colorScheme: kColorScheme,
         appBarTheme: const AppBarTheme().copyWith(
@@ -52,13 +53,7 @@ void main() {
             backgroundColor: kColorScheme.onInverseSurface,
           ),
         ),
-        textTheme: ThemeData().textTheme.copyWith(
-              titleLarge: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-                color: kColorScheme.onSurface,
-              ),
-            ),
+        textTheme: GoogleFonts.acmeTextTheme(),
       ),
       home: const Expenses(),
     ),

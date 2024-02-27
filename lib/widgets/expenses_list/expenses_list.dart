@@ -8,10 +8,10 @@ class ExpensesList extends StatelessWidget {
 
   final List<Expense> expenses;
   final void Function(Expense expense) removeExpense;
-
   @override
   Widget build(BuildContext context) {
     final color = Theme.of(context).colorScheme.error.withOpacity(0.6);
+
     return ListView.builder(
       itemCount: expenses.length,
       itemBuilder: (context, index) => Dismissible(
